@@ -1,0 +1,3 @@
+mutation CreateDataFeedWithPDF($name: String!, $pdf: Upload!, $botId: Int!) {
+  createDataFeedWithPDF(name: $name, pdf: $pdf, botId: $botId)
+}

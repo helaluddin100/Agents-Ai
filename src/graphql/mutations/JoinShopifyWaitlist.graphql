@@ -1,0 +1,3 @@
+mutation JoinShopifyWaitlist($options: ShopifyWaitlistInput!) {
+  joinShopifyWaitlist(options: $options)
+}

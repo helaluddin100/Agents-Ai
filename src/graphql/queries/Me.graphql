@@ -1,0 +1,15 @@
+query Me {
+  me {
+    id
+    fullName
+    email
+    picture
+    company
+    title
+    noOfEmployees
+    stageOfAIAdoption
+    whereDidYouHearAboutUs
+    operations
+    subscription
+  }
+}

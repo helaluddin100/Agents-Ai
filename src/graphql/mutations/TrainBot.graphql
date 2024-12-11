@@ -1,0 +1,3 @@
+mutation TrainBot($botId: Int!) {
+  trainBot(botId: $botId)
+}

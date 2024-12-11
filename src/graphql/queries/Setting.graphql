@@ -1,0 +1,14 @@
+query Setting($token: String!) {
+  getSettingByToken(token: $token) {
+    sessionId
+    setting {
+      messageFieldColor
+      incommingMessageColor
+      incommingMessageTextColor
+      outgoingMessageColor
+      outgoingMessageTextColor
+      messageFieldTextColor
+      logo
+    }
+  }
+}

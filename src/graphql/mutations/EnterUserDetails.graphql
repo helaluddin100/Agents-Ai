@@ -1,0 +1,9 @@
+mutation EnterUserDetails($options: UserFormInput!, $token: String!) {
+  enterUserDetails(options: $options, token: $token) {
+    userToken
+    errors {
+      field
+      message
+    }
+  }
+}

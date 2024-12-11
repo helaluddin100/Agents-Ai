@@ -1,0 +1,13 @@
+query GetBots {
+  getBots {
+    id
+    name
+    messageFieldColor
+    incommingMessageColor
+    incommingMessageTextColor
+    outgoingMessageColor
+    outgoingMessageTextColor
+    messageFieldTextColor
+    logo
+  }
+}

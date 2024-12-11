@@ -1,0 +1,156 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "postgres"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model bot {
+  id                        Int         @id(map: "PK_bc6d59d7870eb2efd5f7f61e5ca") @default(autoincrement())
+  name                      String      @db.VarChar
+  token                     String      @unique(map: "UQ_f3ba0fa15018962a85bff328fe9") @db.VarChar
+  messageFieldColor         String?     @default("#9258f3") @db.VarChar
+  incommingMessageColor     String?     @default("#f1f1f1") @db.VarChar
+  incommingMessageTextColor String?     @default("#000000") @db.VarChar
+  outgoingMessageColor      String?     @default("#6849f8") @db.VarChar
+  outgoingMessageTextColor  String?     @default("#ffffff") @db.VarChar
+  messageFieldTextColor     String?     @default("#ffffff") @db.VarChar
+  vectorStore               String?     @db.VarChar
+  logo                      String?     @default("https://res.cloudinary.com/infrastructure-ambulance/image/upload/v1680851862/hackjunction/events/logos/hgg6khwnmn1rkubteg0p.png") @db.VarChar
+  createdAt                 DateTime    @default(now()) @db.Timestamp(6)
+  updatedAt                 DateTime    @default(now()) @updatedAt @db.Timestamp(6)
+  userId                    Int?
+  user                      user?        @relation(fields: [userId], references: [id])
+  dataFeeds                 data_feed[]
+}
+
+model data_feed {
+  id        Int      @id(map: "PK_44e7912fb14dedf213bc9e9473e") @default(autoincrement())
+  name      String?  @db.VarChar
+  url       String?  @db.VarChar
+  fileName  String?  @db.VarChar
+  data      String?
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamp(6)
+  botId     Int?
+  bot       bot?     @relation(fields: [botId], references: [id])
+}
+
+model history {
+  id        Int      @id(map: "PK_9384942edf4804b38ca0ee51416") @default(autoincrement())
+  sessionId String?  @db.VarChar
+  messages  String?  @db.VarChar
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamp(6)
+}
+
+model message {
+  id        Int      @id(map: "PK_ba01f0a3e0123651915008bc578") @default(autoincrement())
+  sessionId String   @db.VarChar
+  message   String   @db.VarChar
+  fromAI    Boolean
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamp(6)
+}
+
+model setting {
+  id                        Int      @id(map: "PK_fcb21187dc6094e24a48f677bed") @default(autoincrement())
+  messageFieldColor         String?  @db.VarChar
+  incommingMessageColor     String?  @db.VarChar
+  incommingMessageTextColor String?  @db.VarChar
+  outgoingMessageColor      String?  @db.VarChar
+  outgoingMessageTextColor  String?  @db.VarChar
+  messageFieldTextColor     String?  @db.VarChar
+  logo                      String?  @db.VarChar
+  createdAt                 DateTime @default(now()) @db.Timestamp(6)
+  updatedAt                 DateTime @default(now()) @updatedAt @db.Timestamp(6)
+}
+
+model subscription_detail {
+  id        Int      @id(map: "PK_3efb4c9a07a798f168416cb2b18") @default(autoincrement())
+  endpoint  String   @db.VarChar
+  auth      String   @db.VarChar
+  p256dh    String   @db.VarChar
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamp(6)
+}
+
+model token {
+  token     String   @id(map: "PK_d9959ee7e17e2293893444ea371") @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  userId    Int
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamp(6)
+}
+
+model user {
+  id                     Int      @id(map: "PK_cace4a159ff9f2512dd42373760") @default(autoincrement())
+  fullName               String   @db.VarChar
+  email                  String   @db.VarChar
+  confirmed              Boolean? @default(false)
+  password               String?  @db.VarChar
+  confirmedEmail         Boolean  @default(false)
+  googleId               String?  @db.VarChar
+  facebookId             String?  @db.VarChar
+  picture                String?  @default("http://localhost:3000/assests/avatar.png") @db.VarChar
+  company                String?  @db.VarChar
+  title                  String?  @db.VarChar
+  noOfEmployees          String?  @db.VarChar
+  stageOfAIAdoption      String?  @db.VarChar
+  whereDidYouHearAboutUs String?  @db.VarChar
+  operations             String?  @db.VarChar
+  firstLogin             Boolean? @default(true)
+  subscription           String?  @default("Intern") @db.VarChar
+  validity               String?  @default("Unlimited") @db.VarChar
+  dateOfPurchase         String?  @db.VarChar
+  createdAt              DateTime @default(now()) @db.Timestamp(6)
+  updatedAt              DateTime @default(now()) @updatedAt @db.Timestamp(6)
+  bots                   bot[]
+}
+
+model waitlist {
+  id                     Int      @id(map: "PK_973cfbedc6381485681d6a6916c") @default(autoincrement())
+  firstName              String   @db.VarChar
+  lastName               String   @db.VarChar
+  email                  String   @unique(map: "UQ_2221cffeeb64bff14201bd5b3de") @db.VarChar
+  company                String?  @db.VarChar
+  title                  String?  @db.VarChar
+  noOfEmployees          String?  @db.VarChar
+  stageOfAIAdoption      String?  @db.VarChar
+  whereDidYouHearAboutUs String?  @db.VarChar
+  operations             String?  @db.VarChar
+  createdAt              DateTime @default(now()) @db.Timestamp(6)
+  updatedAt              DateTime @default(now()) @updatedAt @db.Timestamp(6)
+}
+
+model session {
+  sess      String
+  expire    DateTime @db.Timestamp(6)
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now()) @db.Timestamp(6)
+  id        Int      @id(map: "PK_f55da76ac1c3ac420f444d2ff11") @default(autoincrement())
+  sid       String   @unique(map: "UQ_7575923e18b495ed2307ae629ae") @db.VarChar
+}
+
+model shopify_waitlist {
+  id                      Int      @id(map: "PK_45d36ee9db10e023a6070ec3b38") @default(autoincrement())
+  firstName               String   @db.VarChar
+  lastName                String   @db.VarChar
+  email                   String   @unique(map: "UQ_7d0e4795fb7ccf3d4fae23dd94e") @db.VarChar
+  company                 String?  @db.VarChar
+  title                   String?  @db.VarChar
+  noOfEmployees           String?  @db.VarChar
+  customerSupportSpending String?  @db.VarChar
+  accuracyRating          Int?
+  availabilityRating      Int?
+  costRating              Int?
+  languageRating          Int?
+  trainingRating          Int?
+  speedRating             Int?
+  staffRating             Int?
+  addOn                   String?  @db.VarChar
+  createdAt               DateTime @default(now()) @db.Timestamp(6)
+  updatedAt               DateTime @default(now()) @db.Timestamp(6)
+}

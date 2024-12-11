@@ -1,0 +1,8 @@
+mutation CreateBot($name: String!, $logo: Upload!) {
+  createBot(name: $name, logo: $logo) {
+    id
+    name
+    logo
+    token
+  }
+}

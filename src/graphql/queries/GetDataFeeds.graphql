@@ -1,0 +1,11 @@
+query GetDataFeeds($botId: Int!) {
+  getDataFeeds(botId: $botId) {
+    id
+    name
+    url
+    fileName
+    descriptionSnippet
+    createdAt
+    updatedAt
+  }
+}

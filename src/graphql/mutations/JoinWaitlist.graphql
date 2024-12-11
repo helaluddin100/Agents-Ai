@@ -1,0 +1,3 @@
+mutation JoinWaitlist($options: WaitlistInput!) {
+  joinWaitlist(options: $options)
+}

@@ -1,0 +1,7 @@
+mutation UpdateBotLogoAndName($id: Int!, $name: String!, $logo: Upload!) {
+  updateBotLogoAndName(id: $id, name: $name, logo: $logo) {
+    id
+    name
+    logo
+  }
+}

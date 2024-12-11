@@ -1,0 +1,3 @@
+mutation CreateDataFeedWithText($name: String!, $text: String!, $botId: Int!) {
+  createDataFeedWithText(name: $name, text: $text, botId: $botId)
+}

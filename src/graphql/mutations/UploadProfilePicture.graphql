@@ -1,0 +1,3 @@
+mutation UploadProfilePicture($fileName: String!, $file: Upload!, $id: Int!) {
+  uploadProfilePicture(fileName: $fileName, file: $file, id: $id)
+}

@@ -1,0 +1,3 @@
+mutation UploadLogo($fileName: String!, $file: Upload!, $id: Int!) {
+  uploadLogo(fileName: $fileName, file: $file, id: $id)
+}

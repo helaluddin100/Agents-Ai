@@ -1,0 +1,12 @@
+query GetSettingById($id: Int!) {
+  getSettingById(id: $id) {
+    messageFieldColor
+    incommingMessageColor
+    incommingMessageTextColor
+    outgoingMessageColor
+    outgoingMessageTextColor
+    messageFieldTextColor
+    logo
+    token
+  }
+}

@@ -1,0 +1,7 @@
+mutation CreateDataFeedWithScrapping(
+  $name: String!
+  $urls: [String!]!
+  $botId: Int!
+) {
+  createDataFeedWithScrapping(name: $name, urls: $urls, botId: $botId)
+}

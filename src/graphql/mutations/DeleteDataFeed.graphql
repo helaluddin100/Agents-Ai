@@ -1,0 +1,3 @@
+mutation DeleteDataFeed($id: Int!) {
+  deleteDataFeed(id: $id)
+}

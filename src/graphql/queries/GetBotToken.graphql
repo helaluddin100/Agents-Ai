@@ -1,0 +1,3 @@
+query GetBotToken($botId: Int!) {
+  getBotToken(id: $botId)
+}

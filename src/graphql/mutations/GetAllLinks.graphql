@@ -1,0 +1,3 @@
+mutation GetLinks($url: String!, $depth: Int!, $maxNoUrls: Int!) {
+  getLinks(url: $url, depth: $depth, maxNoUrls: $maxNoUrls)
+}

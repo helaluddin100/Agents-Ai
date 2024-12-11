@@ -1,0 +1,21 @@
+mutation UpdateSetting(
+  $id: Int!
+  $messageFieldColor: String!
+  $outgoingMessageColor: String!
+  $outgoingMessageTextColor: String!
+  $incommingMessageColor: String!
+  $incommingMessageTextColor: String!
+  $messageFieldTextColor: String!
+  $logo: String!
+) {
+  updateSetting(
+    logo: $logo
+    messageFieldTextColor: $messageFieldTextColor
+    outgoingMessageTextColor: $outgoingMessageTextColor
+    outgoingMessageColor: $outgoingMessageColor
+    incommingMessageTextColor: $incommingMessageTextColor
+    incommingMessageColor: $incommingMessageColor
+    messageFieldColor: $messageFieldColor
+    id: $id
+  )
+}

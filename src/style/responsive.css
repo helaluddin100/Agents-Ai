@@ -1,0 +1,348 @@
+@media only screen and (min-width: 1600px) {
+    .container { max-width: 1450px; }
+}
+
+@media only screen and (max-width: 1850px) {
+    .banner-section .heading-outer .social-icons { left: -90px; top: 155px; }
+}
+
+@media only screen and (max-width: 1750px) {
+    .banner-section .heading-outer .social-icons { left: -40px; }
+}
+
+@media screen and (max-width: 1599px) { 
+    .main-header { padding-top: 40px; }
+    .navbar li.navbar-logo-outer { padding: 0 18px; }
+    .banner-section { padding-top: 120px; }
+    .banner-section .heading-outer { margin-bottom: -76px; padding: 0px 70px; }
+    .banner-section-outer:before { background-size: cover; }
+    .banner-section .video-box .icon-1 { left: 15px; }
+    .banner-section .video-box .icon-2 { left: -40px; top: 45%; transform: translateY(-45%); }
+    .banner-section .video-box .icon-3 { right: -20px; }
+    .banner-section .video-box .circle-icon-1 { left: 25px; }
+    .banner-section .video-box .circle-icon-3 { right: 125px; }
+    .banner-section .video-box .circle-icon-2 { left: 15px; }
+    .banner-section .video-box .circle-icon-4 { right: 10px; }
+    .banner-section .video-box .client-img { right: -15px; }
+    .banner-section .heading-outer .social-icons { left: -90px; }
+    .banner-section .video-box .video-shape-img img { width: 93%; }
+    .power-section { padding: 220px 0 150px; }
+    .power-section .content-box ul li:last-child { margin-bottom: 0; }
+    .advantage-section .advantage-inner-box { padding: 67px 50px 50px 50px; width: 1140px; }
+    .advantage-section .advantage-inner-box .content-box { padding-left: 40px; padding-top: 0; }
+    .browse-section .content-box { padding-right: 40px; padding-left: 0; }
+    .reward-section .advantage-inner-box { padding: 65px 40px 0 40px; border-radius: 80px; }
+    .reward-section .advantage-inner-box .heading { margin-bottom: 40px; }
+    .reward-section p { margin-bottom: 25px; font-size: 18px; line-height: 26px; }
+    .reward-section .left-box, .reward-section .right-box { padding-top: 40px; }
+    .privacy-section { padding: 150px 0; }
+    .privacy-section .content-box { padding-left: 0; }
+    .privacy-section .content-box p { padding-right: 20px; }
+    .referal-section .content-box { padding-left: 40px; }
+    .referal-section .content-box p { padding-right: 0; }
+    .get-started .plan-box-outer { gap: 30px; }
+    .get-started .heading { margin-bottom: 68px; }
+    .get-started .plan-box { padding: 79px 25px 45px; }
+    .faq-section .accordion { padding: 0; }
+    .footer .list { padding: 0 10px; }
+}
+@media screen and (max-width: 1440px) { 
+    .banner-section .heading-outer .social-icons { left: -10px; top: -20px; }
+}
+@media screen and (max-width: 1199px) {
+    .h1, h1 { font-size: 40px; line-height: 48px; }
+    .h2, h2 { font-size: 36px; line-height: 42px; }
+    .h3, h3 { font-size: 32px; line-height: 36px; }
+    .h5, h5 { font-size: 18px; line-height: 26px; }
+    p { font-size: 18px; line-height: 26px; }
+    .navbar .navbar-icon a { padding-right: 0px; }
+    .navbar .navbar-brand { margin-right: 10px; }
+    .navbar li { padding: 0 10px; }
+    .navbar li a { font-size: 18px; line-height: 18px; padding: 11px 25px !important; }
+    .navbar li.navbar-logo-outer figure img { width: 90px; }
+    .navbar li:last-child a.download { padding: 13px 25px !important; }
+    .navbar .agent-dropdown { left: 15px; top: 50px; }
+    .banner-section { padding-top: 100px; }
+    .banner-section .video-box .video-image img { width: 100%; }
+    .banner-section .heading-outer .social-icons { left: 0px; top: -20px; }
+    .banner-section .heading-outer .social-icons li { margin-bottom: 40px; }
+    .banner-section .heading-outer .social-icons li::before { height: 25px; bottom: -33px; }
+    .banner-section .heading-outer .social-icons li a figure img { width: 35px; height: 35px; }
+    .banner-section .heading-outer .social-icons li a i { top: 0px; }
+    .banner-section .video-box .icon-1 { left: 30px; }
+    .banner-section .video-box .icon-2 { left: -25px;  top: 45%; transform: translateY(-45%); }
+    .banner-section .video-box .icon-3 { right: -10px; top: 90px; }
+    .banner-section .video-box .circle-icon-1 { left: 45px; top: 170px; }
+    .banner-section .video-box .circle-icon-2 { left: 35px; }
+    .banner-section .video-box .circle-icon-3 { right: 70px; top: 5px; }
+    .banner-section .video-box .circle-icon-4 { right: 30px; }
+    .banner-section .video-box .video-image img { width: 85%; }
+    .banner-section .video-box .video-icon img { width: 90px; }
+    .banner-section .video-box .client-img { right: 20px; bottom: 180px; }
+    .banner-section .video-box .client-img img { width: 240px; }
+    .banner-section .video-box .icon-1 img, .banner-section .video-box .icon-2 img, .banner-section .video-box .icon-3 img { width: 75px; }
+    .banner-section .video-box .circle-icon-1 img, .banner-section .video-box .circle-icon-2 img, .banner-section .video-box .circle-icon-3 img, .banner-section .video-box .circle-icon-4 img { width: 10px; }
+    .banner-section .video-box .video-shape-img img { width: 82%; }
+    .power-section { padding: 175px 0 100px; }
+    .power-section .content-box h2 { margin-bottom: 35px; }
+    .advantage-section .advantage-inner-box { padding: 50px 40px; width: 960px; }
+    .advantage-section .advantage-inner-box .content-box { padding-left: 0; }
+    .advantage-section .advantage-inner-box .content-box h2 { margin-bottom: 25px; }
+    .browse-section { padding: 100px 0; }
+    .browse-section .content-box { padding: 0; }
+    .reward-section .advantage-inner-box { padding: 50px 30px 0 30px; border-radius: 50px; }
+    .reward-section .advantage-inner-box .heading { margin-bottom: 30px;}
+    .reward-section p { margin-bottom: 20px; font-size: 16px; line-height: 24px; }
+    .reward-section .left-box, .reward-section .right-box { padding-top: 30px; }
+    .privacy-section { padding: 100px 0; }
+    .privacy-section .content-box { padding: 0; }
+    .privacy-section .content-box p { padding: 0; }
+    .privacy-section .content-box h2 { margin-bottom: 25px; }
+    .referal-section .left-box .list { padding: 22px 35px; }
+    .referal-section .content-box { padding: 0; }
+    .referal-section .content-box p { margin-bottom: 30px; }
+    .get-started { padding: 100px 0; }
+    .get-started .heading { margin-bottom: 50px; }
+    .get-started .plan-box h3 { width: 50px; height: 50px;}
+    .get-started .plan-box { padding: 70px 15px 30px; }
+    .get-started .plan-box figure img { width: 70px; }
+    .get-started .heading figure img { width: 45px; }
+    .faq-section { background: rgba(250, 244, 255, 0.47) ; padding: 100px 0; margin-bottom: 0px; }
+    .faq-section h2 { margin-bottom: 40px; }
+    .faq-section .accordion .card .card-header button { font-size: 18px; line-height: 26px; padding: 25px 60px 25px 35px !important; }
+    .faq-section .accordion .card .card-body { padding: 22px 35px 30px; }
+    .footer .list { padding: 0 30px; }
+    .footer li a { font-size: 18px; line-height: 18px; padding: 11px 25px !important; }
+    .footer li.footer-logo-outer figure img { width: 90px; }
+    .footer li:last-child a.download { padding: 13px 25px !important; }
+}
+
+  
+@media screen and (max-width: 991px) {
+    .h1, h1 { font-size: 36px; line-height: 42px; }
+    .h2, h2 { font-size: 32px; line-height: 40px; }
+    .h3, h3 { font-size: 26px; line-height: 32px; }
+    .h4, h4 { font-size: 18px; }
+    .h5, h5 { font-size: 16px; line-height: 24px; }
+    p { font-size: 16px; line-height: 24px; }
+    .text-size-16 { font-size: 14px; line-height: 22px; }
+    .text-size-18 { font-size: 16px; line-height: 24px; }
+    .navbar .navbar-brand figure img { width: 70px; }
+    .navbar-toggler span.navbar-toggler-icon { transition: all 0.15s; }
+    .navbar-toggler span.navbar-toggler-icon:first-child { margin-top: 0; }
+    .navbar-toggler.collapsed span:nth-child(1) { transform: rotate(0deg); }
+    .navbar-toggler.collapsed span:nth-child(2) { opacity: 1; }
+    .navbar-toggler.collapsed span:nth-child(3) { transform: rotate(0deg); }
+    .navbar-toggler span:nth-child(1) { transform: rotate(45deg); transform-origin: 0% 80%; }
+    .navbar-toggler span:nth-child(2) { opacity: 0; }
+    .navbar-toggler span:nth-child(3) { transform: rotate(-45deg); transform-origin: 15% 100%; }
+    .navbar-light .navbar-toggler-icon { background: var(--e-global-color-black); height: 2px; margin: 7px 0 0 0; width: 100%; float: right; }
+    .navbar-toggler { margin-left: auto; border: none !important; padding: 0; width: 30px; height: 22px; }
+    .navbar-toggler:focus { outline: none; }
+    .navbar-collapse { background: var(--e-global-color-white); position: absolute; right: 0px; width: 30%; top: 65px; z-index: 16; padding: 0; box-shadow: 0px 30px 30px 20px rgba(30,34,47,0.2);}
+    .navbar .agent-dropdown li { display: block; }
+    .navbar .agent-dropdown li a:before { display: none; }
+    .navbar .agent-dropdown li a:after { display: none; }
+    .navbar li { padding: 0px; }
+    .navbar li a { font-size: 16px; line-height: 18px; padding: 12px 30px!important; border-radius: 0; color: var(--e-global-color-primary) !important;}
+    .navbar .navbar-icon a { color: var(--e-global--color-white); font-size: 22px; padding: 7px 30px 30px 30px; display: block; line-height: 22px; }
+    .navbar .agent-dropdown { padding: 0; background: var(--global--color-very-dark-gray); border: none; box-shadow: none; width: auto;}
+    .navbar .agent-dropdown .agent-menu { font-size: 14px; line-height: 20px; padding: 6px 40px !important; font-weight: 500; }
+    .navbar .agent-dropdown ul { padding: 0 !important; }
+    .navbar-nav li.active > a { color: var(--e-global-color-white) !important; background: var(--e-global-color-accent); }
+    .navbar li a:hover { color: var(--e-global-color-white) !important; background: var(--e-global-color-accent); }
+    .navbar .agent-dropdown .agent-menu:hover { color: var(--e-global-color-accent) !important; }
+    .navbar li:last-child a.download { padding: 12px 30px !important; font-weight: 500; border-radius: 0; background: transparent; color: var(--e-global-color-primary) !important; }
+    .navbar li:last-child a.download:hover { background: var(--e-global-color-accent); color: var(--e-global-color-white) !important; }
+    .main-header { padding-top: 20px; }
+    .banner-section { padding-top: 55px; }
+    .banner-section .heading-outer h1 { margin-bottom: 15px; }
+    .banner-section .heading-outer .email-form .field-input { width: 360px; height: 56px; padding: 12px 135px 12px 25px; }
+    .banner-section .heading-outer .email-form .field-input .form-submit { right: 6px; top: 6px; width: 115px; height: 44px; }
+    .banner-section .video-box { bottom: -50px; }
+    .banner-section .heading-outer { margin-bottom: -45px; }
+    .banner-section .video-box .video-icon img { width: 75px; }
+    .banner-section .heading-outer .email-form .rotate-icon { right: -60px; bottom: -15px; }
+    .banner-section .heading-outer .email-form .rotate-icon img { width: 50px; }
+    .banner-section .video-box .client-img { right: 5px; bottom: 110px; }
+    .banner-section .video-box .client-img img { width: 200px; }
+    .banner-section .video-box .icon-1 { left: 20px; top: 50px; }
+    .banner-section .heading-outer .social-icons { left: 0; top: -25px; }
+    .banner-section .video-box .circle-icon-1 { left: 35px; top: 130px; }
+    .banner-section .video-box .circle-icon-2 { left: 20px; bottom: 90px; }
+    .banner-section .video-box .circle-icon-3 { right: 50px; top: 15px; }
+    .banner-section .video-box .circle-icon-4 { right: 15px; bottom: 105px; }
+    .banner-section .video-box .video-shape-img { bottom: 50px; }
+    .banner-section .video-box .video-shape-img img { width: 87%; }
+    .generic-section .content-box h5 { padding: 8px 20px 8px; margin-bottom: 17px; }
+    .generic-section .content-box h2 { margin-bottom: 10px; }
+    .power-section { padding: 110px 0 70px; }
+    .power-section .content-box ul li { padding: 15px 25px 15px 25px; margin-bottom: 15px; }
+    .power-section .content-box ul li i { font-size: 12px; margin-right: 10px; }
+    .advantage-section .advantage-inner-box { padding: 40px 20px; width: 720px; }
+    .advantage-section .advantage-inner-box .content-box h2 { margin-bottom: 10px; }
+    .browse-section { padding: 70px 0; }
+    .reward-section .advantage-inner-box { padding: 40px 60px 0 60px; }
+    .reward-section .advantage-inner-box .heading { margin-bottom: 10px;}
+    .reward-section .content-outer { display: grid; gap: 0; }
+    .reward-section p { margin-bottom: 15px; }
+    .reward-section .left-box, .reward-section .right-box { padding-top: 15px; }
+    .reward-section .image-box { padding-top: 20px; }
+    .privacy-section { padding: 70px 0; }
+    .referal-section { padding-bottom: 70px; }
+    .referal-section .left-box .list { padding: 18px 20px; }
+    .referal-section .content-box p { margin-bottom: 20px; }
+    .referal-section .content-box a { padding: 15px 25px; }
+    .get-started { padding: 70px 0; }
+    .get-started .heading { margin-bottom: 40px; }
+    .get-started .plan-box h3 { width: 40px; height: 40px; }
+    .get-started .plan-box-outer { grid-template-columns: repeat(2, 1fr); }
+    .get-started .plan-box { padding: 50px 40px 20px; }
+    .get-started .plan-box figure { margin-bottom: 25px; }
+    .get-started .plan-box figure img { width: 65px; }
+    .get-started .heading figure img { width: 40px; }
+    .faq-section { padding: 70px 0; }
+    .faq-section h2 { margin-bottom: 30px; }
+    .faq-section .accordion .card .card-header button::before { font-size: 14px; width: 30px; height: 30px; line-height: 30px; }
+    .faq-section .accordion .card .card-header button { font-size: 16px; line-height: 24px; padding: 20px 60px 20px 30px !important; }
+    .faq-section .accordion .card .card-body { padding: 22px 30px 25px; }
+    .footer { padding: 40px 0; }
+    .footer .list { padding: 0; }
+    .footer li a { font-size: 16px; line-height: 16px; padding: 11px 15px !important; }
+    .footer li.footer-logo-outer figure img { width: 70px; }
+    .footer li:last-child a.download { padding: 12px 15px !important; }
+    .footer-bottom { padding: 15px 0; }
+} 
+
+
+
+@media screen and (max-width: 767px) {
+    .h1, h1 { font-size: 30px; line-height: 36px; }
+    .h2, h2 { font-size: 26px; line-height: 32px; }
+    .h3, h3 { font-size: 22px; line-height: 28px; }
+    .h4, h4 { font-size: 18px; }
+    .h5, h5 { font-size: 14px; line-height: 22px; }
+    p { font-size: 14px; line-height: 22px; }
+    .navbar-collapse { width: 50%; }
+    .navbar .navbar-brand figure img { width: 60px; }
+    .navbar li a { font-size: 14px; line-height: 16px; padding: 12px 20px!important; }
+    .navbar li:last-child a.download { padding: 12px 20px !important; }
+    .banner-section { padding-top: 45px; position: relative; z-index: 2; }
+    .banner-section .heading-outer { padding: 0px 45px; margin-bottom: -25px; }
+    .banner-section .heading-outer h1 { margin-bottom: 10px; }
+    .banner-section .video-box { bottom: -30px; }
+    .banner-section .heading-outer .social-icons li { margin-bottom: 30px; }
+    .banner-section .heading-outer .social-icons li::before { height: 20px; bottom: -25px; }
+    .banner-section .heading-outer .social-icons li a figure img { width: 30px; height: 30px; }
+    .banner-section .heading-outer p { margin-bottom: 15px; }
+    .banner-section .heading-outer .social-icons { top: -10px; }
+    .banner-section .heading-outer .email-form .field-input .form-input { font-size: 12px; }
+    .banner-section .heading-outer .email-form .field-input { width: 310px; height: 48px; padding: 10px 110px 10px 20px; }
+    .banner-section .heading-outer .email-form .field-input .form-submit { right: 5px; top: 5px; width: 100px; height: 38px; font-size: 12px; line-height: 12px; }
+    .banner-section .video-box .video-icon img { width: 60px; }
+    .banner-section .video-box .client-img img { width: 145px; }
+    .banner-section .video-box .client-img { right: 5px; bottom: 75px; }
+    .banner-section .video-box .icon-1 img, .banner-section .video-box .icon-2 img, .banner-section .video-box .icon-3 img { width: 60px; }
+    .banner-section .video-box .icon-1 { left: 10px; top: 40px; }
+    .banner-section .video-box .icon-2 { top: 45%; transform: translateY(-45%); }
+    .banner-section .video-box .icon-3 { right: -10px; top: 60px; }
+    .banner-section .video-box .circle-icon-1 img, .banner-section .video-box .circle-icon-2 img, .banner-section .video-box .circle-icon-3 img, .banner-section .video-box .circle-icon-4 img {  width: 8px; }
+    .banner-section .video-box .circle-icon-1 { left: 15px; top: 95px; }
+    .banner-section .video-box .circle-icon-2 { left: 20px; bottom: 75px; }
+    .banner-section .video-box .circle-icon-3 { right: 30px; top: 15px; }
+    .banner-section .video-box .circle-icon-4 { right: 10px; bottom: 65px; }
+    .banner-section .heading-outer .email-form .rotate-icon img { width: 40px; }
+    .banner-section .heading-outer .email-form .rotate-icon { right: -45px; bottom: -10px; }
+    .banner-section .video-box .video-shape-img { bottom: 40px; }
+    .banner-section .video-box .video-shape-img img { width: 85%; }
+    .generic-section .content-box h5 { padding: 8px 15px 8px; margin-bottom: 15px; }
+    .generic-section .image-box { margin-bottom: 30px; }
+    .generic-section .image-box figure img { width: 400px; }
+    .power-section { padding: 80px 0 50px; }
+    .power-section .content-box ul li { text-align: left; }
+    .power-section .content-box ul li i { font-size: 10px; }
+    .advantage-section .advantage-inner-box { padding: 30px 20px; width: 540px; }
+    .browse-section { padding: 50px 0; }
+    .reward-section .advantage-inner-box { padding: 30px 30px 0 30px; }
+    .reward-section .advantage-inner-box .heading { margin-bottom: 5px;}
+    .reward-section p { margin-bottom: 10px; font-size: 14px;line-height: 22px; }
+    .reward-section .left-box, .reward-section .right-box { padding-top: 10px; }
+    .reward-section .image-box { padding-top: 15px; }
+    .privacy-section { padding: 50px 0; }
+    .referal-section { padding-bottom: 50px; }
+    .referal-section .content-box { margin-bottom: 30px; }
+    .referal-section .left-box .list { padding: 15px 20px; }
+    .referal-section .content-box p { margin-bottom: 15px; }
+    .referal-section .content-box a { padding: 12px 20px; }
+    .distribution-section { padding-top: 50px; }
+    .get-started { padding: 50px 0; }
+    .get-started .heading { margin-bottom: 30px; }
+    .get-started .plan-box h3 { width: 35px; height: 35px; }
+    .get-started .plan-box { padding: 40px 30px 10px; }
+    .get-started .plan-box figure { margin-bottom: 15px; }
+    .get-started .plan-box figure img { width: 55px; }
+    .get-started .heading figure img { width: 35px; }
+    .faq-section { padding: 50px 0; }
+    .faq-section h2 { margin-bottom: 20px; }
+    .faq-section .accordion .card .card-header button { font-size: 14px; line-height: 22px; padding: 15px 60px 15px 20px !important; }
+    .faq-section .accordion .card .card-header button::before { font-size: 12px; width: 25px; height: 25px; line-height: 25px; }
+    .faq-section .accordion .card .card-body { padding: 22px 20px 20px; }
+    .footer { padding: 40px 0 30px 0; }
+    .footer .list ul { display: grid !important; grid-template-columns: repeat(2, 1fr);text-align: center; }
+    .footer li a { font-size: 14px; line-height: 14px; padding: 10px 12px !important; }
+    .footer li.footer-logo-outer figure img { width: 60px; }
+    .footer li:last-child a.download { padding: 10px 12px !important; }
+    .footer .footer-logo-outer { margin-bottom: 20px; }
+    .footer .footer-logo-outer img { width: 60px; }
+    .footer li.active > a { color: var(--e-global-color-accent) !important; background: transparent; } 
+    .footer li a:hover { color: var(--e-global-color-accent) !important; background: transparent; }
+    .footer li:last-child a.download { background: transparent; color: var(--e-global-color-black) !important; font-weight: 500; }
+    .footer li:last-child a.download:hover { background: transparent; color: var(--e-global-color-accent) !important; }
+    .footer-bottom p { font-size: 14px; line-height: 22px; }
+}
+  
+  
+  
+@media screen and (max-width: 575px) {
+    .h1, h1 { font-size: 24px; line-height: 30px; }
+    .h2, h2 { font-size: 22px; line-height: 28px; }
+    .h3, h3 { font-size: 20px; line-height: 26px; }
+    .text-size-18 { font-size: 14px; line-height: 22px; }
+    .navbar .navbar-logo img { width: 160px; }
+    .navbar-collapse { width: 60%; }
+    .navbar .navbar-brand figure img { width: 50px; }
+    .banner-section .heading-outer .email-form .rotate-icon img { display: none; }
+    .banner-section .heading-outer .social-icons { top: 20px; left: 5px; }
+    .banner-section .heading-outer { padding: 0px 30px; }
+    .banner-section .heading-outer .email-form .field-input { width: 100%; }
+    .banner-section .heading-outer .email-form .field-input .form-submit { width: 90px; }
+    .banner-section .video-box .icon-1 img, .banner-section .video-box .icon-2 img, .banner-section .video-box .icon-3 img { width: 50px; }
+    .banner-section .video-box .icon-1 { left: 25px;  top: 25px; }
+    .banner-section .video-box .icon-2 { left: 25px; top: 45%;transform: translateY(-45%); }
+    .banner-section .video-box .icon-3 { right: 25px; top: 35px; }
+    .banner-section .video-box .video-icon img { width: 45px; }
+    .banner-section .video-box .circle-icon-1 img, .banner-section .video-box .circle-icon-2 img, .banner-section .video-box .circle-icon-3 img, .banner-section .video-box .circle-icon-4 img { width: 6px; }
+    .banner-section .video-box .circle-icon-1 {  top: 0px; left: 20px; }
+    .banner-section .video-box .circle-icon-2 { left: 5px; bottom: 50px; }
+    .banner-section .video-box .circle-icon-3 { right: 15px; top: 10px; }
+    .banner-section .video-box .circle-icon-4 { right: 10px; bottom: 35px; }
+    .banner-section .video-box .client-img { right: -5px; bottom: 50px; }
+    .banner-section .video-box .client-img img { width: 110px; }
+    .banner-section .video-box .video-shape-img { bottom: 30px; left: 5px; }
+    .banner-section .video-box .video-shape-img img { width: 82%; }
+    .generic-section .image-box figure img { width: 300px; }
+    .power-section .content-box ul li i { font-size: 8px; top: 6px; }
+    .advantage-section .advantage-inner-box { padding: 30px 10px; width: 100%; }
+    .reward-section .advantage-inner-box { padding: 30px 25px 0 25px; border-radius: 30px; }
+    .get-started .plan-box-outer { grid-template-columns: repeat(1, 1fr); }
+    .get-started .heading figure img { width: 30px; }
+    .get-started .heading { margin-bottom: 20px; }
+    .footer .footer-logo-outer img { width: 50px; }
+    .custom-popup {
+        transform: translate(-50%, 32%);
+        padding: 25px !important;
+    }
+    .mobile-wrap{
+        flex-wrap: wrap;
+    }
+}
